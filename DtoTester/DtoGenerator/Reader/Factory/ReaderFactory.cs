@@ -10,7 +10,7 @@ namespace DtoGenerator.Reader.Factory
     {
         private static ReaderFactory Instance = new ReaderFactory();
 
-        private JsonReader JsonReader = new JsonReader();
+        private JsonClassReader JsonReader = new JsonClassReader();
 
         private ReaderFactory() { }
 
@@ -19,7 +19,7 @@ namespace DtoGenerator.Reader.Factory
             return Instance;
         }
 
-        public JsonReader GetJsonReader()
+        public JsonClassReader GetJsonReader()
         {
             return JsonReader;
         }

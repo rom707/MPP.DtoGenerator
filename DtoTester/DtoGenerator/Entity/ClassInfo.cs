@@ -1,14 +1,10 @@
-﻿namespace DtoGenerator.Entity
-{
-    class ClassInfo
-    {
-        public string Name { get; set; }
-        public FieldInfo[] Fields { get; set; }
+﻿using System.Collections.Generic;
 
-        public ClassInfo(string name, FieldInfo[] fields)
-        {
-            this.Name = name;
-            this.Fields = fields;
-        }
+namespace DtoGenerator.Entity
+{
+    public class ClassInfo
+    {
+        public string ClassName { get; set; }
+        public List<ClassProperty> Properties { get; set; }
     }
 }
